@@ -1,72 +1,99 @@
 # FridgeToPlate Web Application
 
-FridgeToPlate is a web application that helps users discover recipes based on ingredients they already have. Simply take a photo of your ingredients, and the app will suggest recipes you can make right now.
+Turn your fridge ingredients into delicious recipes with just a few clicks!
 
-## Permanent Deployment
+## Overview
 
-This application is permanently deployed and accessible at:
-**https://yourusername.github.io/fridgetoplate/**
+FridgeToPlate is a web application that helps you:
+- Take pictures of ingredients in your fridge
+- Automatically identify those ingredients
+- Suggest recipes based on what you have
+- Generate fusion cuisine recipes
 
-(Replace "yourusername" with your actual GitHub username after completing the GitHub Pages setup)
+This application is designed to reduce food waste and make cooking more accessible by helping you use the ingredients you already have.
 
 ## Features
 
-- **Ingredient Recognition**: Upload photos of ingredients or capture them with your device camera
-- **Recipe Suggestions**: Get recipe recommendations based on your available ingredients
-- **Fusion Recipe Generation**: Create unique fusion recipes by combining different cuisines
+- **Ingredient Recognition**: Upload photos of your ingredients
+- **Recipe Suggestions**: Find recipes that match your available ingredients
+- **Fusion Cuisine Generator**: Create unique recipes combining different culinary traditions
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 
-## Technology Stack
+## Deployment Instructions
 
-- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
-- **API Integration**: 
-  - Image Recognition (Google Cloud Vision API)
-  - Recipe Database (Spoonacular API)
-- **Deployment**: GitHub Pages (Static Export)
+This repository is configured for GitHub Pages deployment. Follow these steps to deploy:
 
-## Documentation
+1. **Create a GitHub Repository**:
+   - Create a new repository named `fridgetoplate` on GitHub
 
-For detailed documentation, please see:
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/fridgetoplate.git
+   cd fridgetoplate
+   ```
 
-- [GitHub Pages Deployment Guide](./GITHUB_PAGES_DEPLOYMENT.md)
-- [Deployment Verification Guide](./DEPLOYMENT_VERIFICATION.md)
+3. **Copy the Files**:
+   - Copy all files from this deployment package to your local repository
+
+4. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+5. **Enable GitHub Pages**:
+   - Go to your repository on GitHub
+   - Navigate to Settings > Pages
+   - Under "Source", select "Deploy from a branch"
+   - Select "main" branch and "/ (root)" folder
+   - Click "Save"
+
+6. **Access Your Application**:
+   - Your application will be available at: `https://yourusername.github.io/fridgetoplate/`
+   - It may take a few minutes for the deployment to complete
+
+## Alternative Deployment Method
+
+You can also use the built-in deployment script:
+
+1. Install the gh-pages package:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
 
 ## Local Development
 
-### Prerequisites
+To run the application locally:
 
-- Node.js 18 or later
-- npm or yarn
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Installation
+2. Start the development server:
+   ```bash
+   npm start
+   ```
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/fridgetoplate.git
-cd fridgetoplate
-```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
 
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
+## Technology Stack
 
-3. Run the development server
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+- React
+- TypeScript
+- Material UI
+- React Router
+- React Webcam
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Recipe data provided by [Spoonacular API](https://spoonacular.com/food-api)
-- Image recognition powered by [Google Cloud Vision API](https://cloud.google.com/vision)

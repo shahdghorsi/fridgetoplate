@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fridgetoplate/static/css/main.f855e6bc.css",
+    "main.js": "/fridgetoplate/static/js/main.b86c40c3.js",
+    "static/js/453.e8aedd2a.chunk.js": "/fridgetoplate/static/js/453.e8aedd2a.chunk.js",
+    "index.html": "/fridgetoplate/index.html",
+    "main.f855e6bc.css.map": "/fridgetoplate/static/css/main.f855e6bc.css.map",
+    "main.b86c40c3.js.map": "/fridgetoplate/static/js/main.b86c40c3.js.map",
+    "453.e8aedd2a.chunk.js.map": "/fridgetoplate/static/js/453.e8aedd2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b86c40c3.js"
+  ]
+}
